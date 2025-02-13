@@ -44,7 +44,7 @@ do
         if [ "$wantToDeleteFiles" == "y" ];
         then
           echo "deleting file: ${objects_output[1]} \n"
-          # git filter-repo --force --path "${objects_output[1]}" --invert-paths
+          git filter-repo --force --path "${objects_output[1]}" --invert-paths
         fi
       fi
       #Create CSV if don't want to delete the files
